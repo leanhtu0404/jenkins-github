@@ -12,8 +12,7 @@ pipeline {
         }
         stage ('Build Docker Images') {
             steps {
-                sh 'docker build -t tula-1 .'
-                }    
+                sh 'docker build -t tula-1 .'    
             }    
         }
     }
