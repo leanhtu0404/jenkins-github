@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Clone') {
             steps {
-                git 'https://github.com/leanhtu0404/jenkins-github.git'
+                git 'https://github.com/leanhtu0404/jenkins-github'
             }
         }
         stage ('Build Docker Images') {
