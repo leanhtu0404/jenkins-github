@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Clone') {
             steps {
-                git 'https://github.com/handuy/nodejs-todolist'
+                git 'https://github.com/leanhtu0404/jenkins-github.git'
             }
         }
         stage ('Build Docker Images') {
