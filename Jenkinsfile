@@ -25,8 +25,7 @@ pipeline {
                     sh "docker build -t jenkins-demo:${BUILD_NUMBER} ." 
                     sh "docker tag jenkins-demo:${BUILD_NUMBER} jenkins-demo:latest" 
                     }
-                } 
-            }
+            } 
         } 
         stage('Cleaning up') { 
             steps { 
