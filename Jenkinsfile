@@ -12,8 +12,7 @@ pipeline {
         }
         stage ('Build Docker Images') {
             steps {
-                script {
-                    docker.build registry + ":$BUILD_NUMBER"
+                sh 'docker build -t tula-1 .'
                 }    
             }    
         }
