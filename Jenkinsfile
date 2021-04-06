@@ -36,7 +36,7 @@ pipeline {
     }
     post {
         always {
-            emailext body: 'Test mail alert', subject: 'Alert Email', to: 'leanhtu.0404@gmail.com'
+            emailext body: '${DEFAULT_CONTENT}', subject: '${DEFAULT_SUBJECT}', to: 'leanhtu.0404@gmail.com'
         }
     }
 }
