@@ -9,6 +9,7 @@ pipeline {
             steps {
                 git 'https://github.com/handuy/nodejs-todolist'
             }
+        }
         stage ('Build Docker Images') {
             steps {
                 script {
@@ -17,5 +18,4 @@ pipeline {
             }    
         }
     }
-}
 }
