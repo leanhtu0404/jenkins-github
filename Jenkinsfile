@@ -3,7 +3,7 @@ pipeline {
         registry = "leanhtu0404/docker-jenkins"
         registryCredential = 'dockerhub'
     }
-    agent any
+    agent { label 'jenkins-slave' }
     stages {
         stage ('Clone') {
             steps {
