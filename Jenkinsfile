@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy image') { 
             steps {
                 withDockerRegistry(credentialsId: 'jenkins-credentials', url: 'https://index.docker.io/v1/')  
-                script { 
+                   { 
                     docker.withRegistry( '', registryCredential ) { 
                     dockerImage.push() 
                     }
